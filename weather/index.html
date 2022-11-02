@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="weather.css">
+    <script src="https://kit.fontawesome.com/f3b69c2d5b.js" crossorigin="anonymous"></script>
+    <title>Weather</title>
+</head>
+<body onload="getLocation()">
+    <div class="container">
+
+        <div class="container_search">
+            <input type="search" id="search_bar" class="search-bar" name="searchBar" placeholder="Search...">
+            <i class="fa-solid fa-magnifying-glass" onclick="showWeather()"></i>
+            <button type="button" onclick="showWeather()">Search</button>
+        </div>
+
+        <div class="container_display">
+            <h2 class="city-name"></h2>
+            <h1 class="temp"></h1>
+            <div class="icon-weather">
+                <img src="/" alt="weather" class="icon" />
+            </div>
+            <p class="description"></p>
+            <p class="humidity"></p>
+            <p class="wind"></p>
+        </div>
+    
+    </div>
+    
+    <script src="weather.js"></script>
+
+</body>
+</html>
